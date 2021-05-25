@@ -148,6 +148,13 @@
     </t>
     
 </t> 
+<table class='receipt-savings' >
+        			<tr class="pos-left-align"><td style="border-bottom: dotted 1px #000"><strong>Today's Savings   :</strong></td>
+      				<td class="pos-right-align" style="border-bottom: dotted 1px #000">
+      				<strong>	<t t-esc="widget.format_currency_no_symbol(order.get_total_discount())"/></strong>
+      				</td>
+      			</tr>
+      		</table>
 
 <t t-extend="Chrome">
     <t t-jquery='.pos-logo' t-operation='replace'>        
